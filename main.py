@@ -21,4 +21,5 @@ if __name__ == '__main__':
         pygame.display.flip()
     print('My first git program')
     print('And I change it every day')
+    print('qwe')
     pygame.quit()
