@@ -19,4 +19,6 @@ if __name__ == '__main__':
 
         # обновление экрана
         pygame.display.flip()
+    print('My first git program')
+    print('And I change it every day')
     pygame.quit()
