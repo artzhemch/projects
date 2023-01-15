@@ -1,25 +1,17 @@
-import pygame
+def print_average(arr):
+    print(sum(arr) / max(1, len(arr)))
 
-if __name__ == '__main__':
-    pygame.init()
-    size = width, height = 800, 400
-    screen = pygame.display.set_mode(size)
 
-    running = True
-    while running:
-        # внутри игрового цикла ещё один цикл
-        # приема и обработки сообщений
-        for event in pygame.event.get():
-            # при закрытии окна
-            if event.type == pygame.QUIT:
-                running = False
+def print_statistics(arr):
+    print(len(arr))
+    print_average(arr)
+    if not arr:
+        arr = [0]
+    print(min(arr))
+    print(max(arr))
+    arr.sort()
+    print(arr[len(arr) // 2] / 2 + arr[(len(arr) - 1) // 2] / 2)
 
-        # отрисовка и изменение свойств объектов
-        # ...
 
-        # обновление экрана
-        pygame.display.flip()
-    print('My first git program')
-    print('And I change it every day')
-    print('qwe')
-    pygame.quit()
+print_statistics([1, 2])
+
